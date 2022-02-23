@@ -1,0 +1,183 @@
+:root {
+  --header-background: #000;
+  --airbnbBtn: #ff385c;
+  --header-color: #fff;
+  --logoFill-color: #fff;
+  --base-color: #fff;
+  --icon-base-background: #fff;
+  --icon-color: #717171;
+  --auth-menu-background: #333;
+}
+
+#filterBlock {
+  background-color: var(--header-background);
+  height: 100px;
+ 
+}
+#filterBlock article {
+  width: 60%;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background-color: var(--base-color);
+  border-radius: 50px;
+}
+#filterBlock article div lable {
+  width: 100%;
+  display: block;
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.form-control {
+  padding: 15px 10px 10px 20px;
+  border-right: 1px solid #ccc;
+}
+
+.form-control:nth-child(4),
+.form-control:last-child {
+  border: none;
+}
+.form-control input {
+  width: 100%;
+  font-size: 12px;
+  border: none;
+  background: transparent;
+}
+
+#filterBlock article div:nth-child(1) {
+  flex-basis: 35%;
+}
+#filterBlock article div:nth-child(2) {
+  flex-basis: 20%;
+}
+#filterBlock article div:nth-child(3) {
+  flex-basis: 20%;
+}
+#filterBlock article div:nth-child(4) {
+  flex-basis: 25%;
+  display: flex;
+}
+
+.form-control:hover {
+  background-color: #efefef;
+  border-radius: 50px;
+}
+/* .form-control:nth-child(4) {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+} */
+
+#filterBlock article div:nth-child(4) span:first-child {
+  flex-basis: 70%;
+}
+#filterBlock article div:nth-child(4) span:last-child {
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#filterBlock article div:nth-child(4) span:last-child button {
+  background-color: var(--airbnbBtn);
+  border-radius: 50%;
+  width: 50px;
+  color: var(--base-color);
+  height: 50px;
+  border: none;
+  transition: ease all 0.5s;
+}
+
+input[type="date"]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+input[type="date"]:focus:invalid::-webkit-datetime-edit {
+  color: black !important;
+}
+
+input::placeholder,
+.placeholder {
+  color: #999;
+  font-size: 13px;
+}
+
+.form-control span button:focus {
+  width: 100px !important;
+  border-radius: 50px !important;
+  height: 50px !important;
+  transition: ease all 0.5s;
+}
+
+.form-control span button:focus::before {
+  content: "Search";
+  display: block;
+}
+
+/* Slider1 css starts here */
+#sliderBlock {
+  background-color: var(--header-background);
+}
+.imageFile {
+  position: relative;
+}
+.imageFile picture img {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 10px;
+  padding-bottom: 100px;
+}
+#sliderBlock figure{
+  position: relative;
+}
+
+#sliderBlock .slider_content{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: var(--base-color);
+}
+.slider_content h2{
+  font-size: 38px;
+  padding: 20px 0;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+}
+.slider_content button{
+  margin-top: 10px;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--airbnbBtn);
+}
+
+/* Location DropDown */
+.locationBlock {
+  position: absolute;
+  background: #fff;
+  width: 509px;
+  height: 167px;
+  left: 270px;
+  border-radius: 20px;
+  top: 150px;
+  padding: 40px;
+  display: none;
+}
+.locationBlock button {
+  width: 422px;
+  border: none;
+  height: 65px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 62px;
+  box-shadow: 2px 2px 2px 2px;
+  border-radius: 27px;
+  margin-top: 15px;
+}
